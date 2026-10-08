@@ -1,0 +1,23 @@
+[project]
+name = "ai-video-translator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "alireza", email = "ali@yahoo.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "faster-whisper>=1.2.1",
+    "ffmpeg-python>=0.2.0",
+    "sentencepiece>=0.2.2",
+    "torch>=2.14.1",
+    "transformers>=5.19.0",
+]
+
+[project.scripts]
+ai-video-translator = "ai_video_translator:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
